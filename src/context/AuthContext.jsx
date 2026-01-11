@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }) => {
       throw new Error("Invalid credentials");
     }
 
-    setToken();
+    setToken(email);
     setUser(found);
   };
 
